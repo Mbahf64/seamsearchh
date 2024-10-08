@@ -1,6 +1,5 @@
 
 "use client";
-
 import React, { useState } from "react";
 import Filter from "../search/filter";
 // import Mainfooter from "@/components/";

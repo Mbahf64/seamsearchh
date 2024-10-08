@@ -2,11 +2,11 @@
 
 import React, { useState } from "react";
 import { products } from "../../data/products";
-import FormControl from "@mui/joy/FormControl";
-import FormLabel from "@mui/joy/FormLabel";
-import Textarea from "@mui/joy/Textarea";
-import Button from "@mui/joy/Button";
-import { styled } from '@mui/material/styles';
+// import FormControl from "@mui/joy/FormControl";
+// import FormLabel from "@mui/joy/FormLabel";
+// import Textarea from "@mui/joy/Textarea";
+// import Button from "@mui/joy/Button";
+// import { styled } from '@mui/material/styles';
 
 
 const ProductGrid = ({ }) => {
@@ -14,7 +14,7 @@ const ProductGrid = ({ }) => {
   return (
     <div className="">
 
-      <div className="lg:w-[910px] 2xl:w-[975px] xl:ml-[2rem] grid grid-cols-2 max-[600px]:grid-cols-1
+      <div className="w-[90vw] lg:w-[910px] 2xl:w-[975px] xl:ml-[2rem] grid grid-cols-2 max-[600px]:grid-cols-1
   md:grid-cols-2 lg:grid-cols-3 2xl:gap-8 gap-4">
         {products.map((product, index) => (
           <div

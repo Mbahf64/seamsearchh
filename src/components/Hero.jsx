@@ -9,31 +9,33 @@ const Hero = () => {
       <div className="w-[983px] flex flex-row items-start justify-start relative max-w-full">
         <div className="flex-1 flex flex-col items-center justify-start gap-[px] max-w-full z-[1] ">
           <div className="self-stretch flex flex-col items-center justify-start gap-[px] max-w-full">
-            <button className="cursor-pointer mt-[3rem] [border:none] text-[14px] px-[12px] py-[6px] bg-basic-app-landing-color 
-            rounded-81xl flex flex-row items-start justify-start whitespace-nowrap hover:bg-lavender-100 -m-5">
-              <Link className="w-[104px] relative text-sm leading-[150%] font-medium font-body-sub-heading-16-bold text-data-analysis-color03 text-center inline-block min-w-[104px] no-underline" href="/search">
+            <Link className="no-underline cursor-pointer mt-[3rem] [border:none] text-[14px] px-[12px] py-[6px] bg-basic-app-landing-color 
+            rounded-81xl flex flex-row items-start justify-start whitespace-nowrap hover:bg-lavender-100 -m-5"  href="/search">
+              <div className="w-[104px] relative text-sm leading-[150%] font-medium font-body-sub-heading-16-bold text-data-analysis-color03 text-center inline-block min-w-[104px] no-underline">
                 Product Search
-              </Link>
-            </button>
+              </div>
+            </Link>
 
 
             <div className="self-stretch flex flex-col items-center justify-start relative">
-              <img
-                className="w-[347px] h-[57px]  md:w-[530px] md:h-[90px] lg:w-[571px] lg:h-[90px] absolute !m-[0]
-                 right-[45px] top-[108px] md:right-[183px] md:top-[170px] lg:top-[125px] lg:left-[373.5px]"
-                loading="lazy"
-                alt=""
-                src="/Vector.png"
-              />
+              <div className="m relative">
+                <img
+                  className="absolute w-[347px] h-[57px] md:w-[530px] md:h-[90px] lg:w-[571px] lg:h-[90px] z-0 top-[6.5rem] right-[1rem] md:top-[11rem] mg:right-[2rem] lg:top-[9rem] lg:right-[2rem]"
+                  loading="lazy"
+                  alt=""
+                  src="/Vector.png"
+                />
 
+                <b className="leading-[rem] w-auto z-[1] text-[32px] md:text-[50px] relative">
+                  <p className="font-bold lg:text-[64px] md:w-auto">
+                    Explore Every Corner of <br className="lg:hidden" /> Retail with Ease,
+                    <span className="lg:text-[56px] bg-[] text-neutral-10">
+                      <br className="lg:hidden" />With Just an Image
+                    </span>
+                  </p>
+                </b>
+              </div>
 
-
-              <b className="leading-[rem] w-auto z-[1] text-[32px] md:text-[50px]  lg:-m-5">
-                <p className="font-bold  lg:text-[64px] md:w-auto">Explore Every Corner of <br className="lg:hidden" /> Retail with Ease,
-
-                  <span className="lg:text-[56px] bg-[] text-neutral-10" ><br className="lg:hidden" />With Just an Image</span>
-                </p>
-              </b>
 
 
 
@@ -51,21 +53,34 @@ const Hero = () => {
                 <Link className="flex-1 relative leading-[26px] text-neutral-10 no-underline text-base " href="/search">New Search</Link>
               </div>
             </div>
-            <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex-1 flex flex-row items-start justify-start min-w-full md:min-w-[126px] ">
-              <Link className="no-underline flex-1 rounded-81xl overflow-hidden flex flex-row items-center justify-center py-3.5 px-[19px] gap-[10px] border-[1px] border-solid border-neutral-30" href="/Demo">
-                <img
-                  className="h-6 w-6 relative overflow-hidden shrink-0"
+            <Link className="no-underline cursor-pointer flex-1 flex flex-row items-start justify-start md:min-w-[126px] min-w-full" href="/search">
+              <div className="flex-1 rounded-81xl bg-[transparent] overflow-hidden flex flex-row items-center justify-center py-3.5 px-5 gap-[10px]  border-[1px] border-solid border-neutral-30">
+              <img
+                  className="h-6 w-6"
                   alt=""
                   src="/Icon.png"
                 />
-                <b className="flex-1 relative text-base leading-[26px] inline-block font-body-sub-heading-16-bold text-data-analysis-color03 text-center min-w-[120px]">
+                
+                <b className="text-base leading-[26px] inline-block font-body-sub-heading-16-bold text-data-analysis-color03 text-center">
+                  Watch A Demo
+                </b>
+              </div>
+            </Link>
+            {/* <button className="cursor-pointer [border:none] p-0 bg-[transparent] flex flex-row items-center justify-center max-w-full md:min-w-[126px]">
+              <Link className="no-underline flex flex-row items-center justify-center py-3.5 px-[19px] gap-[10px] border-[1px] border-solid border-neutral-30 rounded-81xl overflow-hidden" href="/search">
+                <img
+                  className="h-6 w-6"
+                  alt=""
+                  src="/Icon.png"
+                />
+                <b className="text-base leading-[26px] inline-block font-body-sub-heading-16-bold text-data-analysis-color03 text-center">
                   Watch A Demo
                 </b>
               </Link>
-            </button>
+            </button> */}
           </div>
         </div>
-     
+
       </div>
     </section>
   );
